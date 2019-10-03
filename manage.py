@@ -4,11 +4,6 @@ from os import path
 import argparse
 
 
-# App Modules
-import config
-
-
-
 # Argument parsing
 parser = argparse.ArgumentParser(
     description="Organize & Timestamp Nintendo Switch Captures"
@@ -27,3 +22,9 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
+
+
+
+from PIL import Image
+image_thing = Image.open('./Output/droplet.png')
+image_thing.show()
