@@ -1,0 +1,23 @@
+__init__.py
+    argparse stuffs
+
+
+something to transfer files
+    - Don't retransfer transfered files
+    - Transfer files to target output, not on the SD card
+        - Maybe option but not default
+    - Rename files to be "YYYY-MM-DD.HH-MM.fmt"
+        - Custom format options
+    - Option to transfer just images (or videos)
+        - Option to separate images and videos into different directories?
+
+
+getting titleids from user (via images)
+    - If stored already: don't prompt
+    - If not stored: Prompt
+    - Process of getting titleIDs via internet
+        - http://nswdb.com/xml.php (mostly updated!!)
+
+
+Final packaging:
+https://stackoverflow.com/questions/9002275/how-to-build-a-single-python-file-from-multiple-scripts

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<releases>
+<release>
+	<id>1</id>
+	<name>The Legend of Zelda: Breath of the Wild</name>
+	<publisher>Nintendo</publisher>
+	<region>WLD</region>
+	<languages>en,fr,de,it,es,ru,ja</languages>
+	<group>BigBlueBox</group>
+	<imagesize>16</imagesize>
+	<serial>LA-H-AAAAA</serial>
+	<titleid>01007EF00011E000</titleid>
+	<imgcrc>5DD119C1</imgcrc>
+	<filename>bbb-h-aaaaap</filename>
+	<releasename>The.Legend.of.Zelda.Breath.of.the.Wild.PROPER.NSW-BigBlueBox</releasename>
+	<trimmedsize>14880118272</trimmedsize>
+	<firmware>1.0.0</firmware>
+	<type>1</type>
+	<card>1</card>
+</release>
+<release>
+	<id>2</id>
+	<name>Mario Kart 8 Deluxe</name>
+	<publisher>Nintendo</publisher>
+	<region>WLD</region>
+	<languages>en,fr,de,it,es,nl,pt,ru,ja</languages>
+	<group>BigBlueBox</group>
+	<imagesize>8</imagesize>
+	<serial>LA-H-AABPA</serial>
+	<titleid>0100152000022000</titleid>
+	<imgcrc>1912A1DF</imgcrc>
+	<filename>bbb-h-aabpap</filename>
+	<releasename>Mario.Kart.8.Deluxe.PROPER.NSW-BigBlueBox</releasename>
+	<trimmedsize>7672369152</trimmedsize>
+	<firmware>1.0.0</firmware>
+	<type>1</type>
+	<card>1</card>
+</release>
+</releases>
