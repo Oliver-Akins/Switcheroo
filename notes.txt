@@ -1,7 +1,3 @@
-__init__.py
-    argparse stuffs
-
-
 something to transfer files
     - Don't retransfer transfered files
     - Transfer files to target output, not on the SD card
