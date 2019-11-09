@@ -29,17 +29,13 @@ class Config():
 
     # NOTE: Ensure that the album folder exists
     if not SOURCE.endswith(("/Album", "/Album/")):
-        print(0)
         __dir = Path(SOURCE+"/Album")
         sys.exit(_NO_ALBUM_FOLDER)
 
     else:
-        print(1)
         if SOURCE.endswith("Album"):
-            print(2)
             SOURCE = SOURCE[:-len("Album")]
         else:
-            print(3)
             SOURCE = SOURCE[:-len("Album/")]
 
     # NOTE: Ensure that the path indicates the inner directory
