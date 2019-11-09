@@ -16,7 +16,7 @@ def RENAME(filename):
             filename: string - The raw filename from the Nintendo/Album/ folder
 
         Return: String - The formatted filename from the given filename. This
-            does not include the file extension in it.
+            includes the file extension in it.
     """
     # Example Filename: "2019051913454200-F1C11A22FAEE3B82F21B330E1B786A39"
     date = datetime(
