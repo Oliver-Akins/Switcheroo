@@ -25,7 +25,7 @@ def get_files():
         elif config.DO_VIDEOS and file_ext in config.VIDEO_FORMATS:
             yield file
         else:
-            sys.exit("Oh no, the impossible happened, this shouldn't be happening, if it did, make an issue at https://github.com/Tyler-A/Nintendo-Switch-Manager/issues/new with the error code: 0x5A748F4")
+            sys.exit("Oh no, the impossible happened, this shouldn't be happening, if it did, make an issue at https://github.com/Tyler-A/Nintendo-Switch-Photo-Manager/issues/new with the error code: 0x5A748F4")
 
 
 
