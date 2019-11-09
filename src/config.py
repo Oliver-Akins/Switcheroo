@@ -17,15 +17,19 @@ class Config():
     with open("config.yaml", "r") as file:
         data = yaml.load(file, Loader=yaml.SafeLoader)
 
-    VERSION = data["VERSION"]
+    # CONSTANTS
+    VERSION = "0.1.0"
+    VIDEO_FORMATS = ["mp4", "mkv"]
+    IMAGE_FORMATS = ["png", "jpg", "jpeg"]
+
+    # USER ASSIGNED VARIABLES
     KEEP_ON_SD = data["KEEP_ON_SD_CARD"]
     FORMAT = data["FILENAME_FORMAT"]
     TARGET = data["TARGET_FILEPATH"]
-    UPDATE_TITLE_IDS = data["UPDATE_TITLE_IDS"]
-
-
-
+    UPDATE_TITLES = data["UPDATE_TITLE_IDS"]
     SOURCE = data["SOURCE_FILEPATH"]
+    DO_IMAGES = data["INCLUDE_IMAGES"]
+    DO_VIDEOS = data["INCLUDE_VIDEOS"]
 
     # NOTE: Ensure that the album folder exists
     if not SOURCE.endswith(("/Album", "/Album/")):
@@ -40,3 +44,8 @@ class Config():
 
     # NOTE: Ensure that the path indicates the inner directory
     if not SOURCE.endswith("/"): SOURCE + "/"
+
+
+    # NOTE: Ensure we have something to do
+    if (not DO_IMAGES) and (not DO_VIDEOS):
+        sys.exit("You must specify one type of file to manage in your config.")
