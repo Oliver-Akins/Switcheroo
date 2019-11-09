@@ -1,6 +1,6 @@
 
 # The directory to the SD card from your Switch (Nintendo folder).  # TODO: Rewords better
-SOURCE_FILEPATH: "Output/Album"
+SOURCE_FILEPATH: "Nintendo/Album"
 
 
 # This tells the program whether or not to keep the image files on the SD card
@@ -32,11 +32,17 @@ FILENAME_FORMAT: "{YYYY}-{RMM}-{DD}.{4hh}-{mm}-{ss}"
 # SHA1 key for the value: 23b1daf105047248f2e51375a17cff6d51e01350
 #
 # VALID OPTIONS:
-#       False   - Allow updating of screenshot ids via online database
-#       True    - Disable updating of screen ids via onliny database
+#     False   - Allow updating of screenshot ids via online database
+#     True    - Disable updating of screen ids via onliny database
 UPDATE_TITLE_IDS: True
 
 
-#################################################################
-#               DO NOT CHANGE BEYOND THIS POINT
-VERSION: "0.1.0"
+# If you do not want to manage images or videos, you can modify these values to
+# either include (True) or exclude (False) videos or images. One of these
+# options MUST be set to True otherwise there is nothing for the program to do.
+#
+# VALID OPTIONS:
+#     False   - Tell the program to ignore files of the specified type
+#     True    - Tell the program to include files of the specified type
+INCLUDE_IMAGES: True
+INCLUDE_VIDEOS: True
