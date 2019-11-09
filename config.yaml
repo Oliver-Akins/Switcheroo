@@ -1,6 +1,6 @@
 
 # The directory to the SD card from your Switch (Nintendo folder).  # TODO: Rewords better
-SOURCE_FILEPATH: ""
+SOURCE_FILEPATH: "Output/Album"
 
 
 # This tells the program whether or not to keep the image files on the SD card
@@ -24,6 +24,17 @@ TARGET_FILEPATH: ""
 
 
 FILENAME_FORMAT: "{YYYY}-{RMM}-{DD}.{4hh}-{mm}-{ss}"
+
+
+# Enable updating of all screenshotids via online database.
+# This requires a key.txt which contains the AES-ECB key for decrypting ids.
+# This can be found in capsrv nso file.
+# SHA1 key for the value: 23b1daf105047248f2e51375a17cff6d51e01350
+#
+# VALID OPTIONS:
+#       False   - Allow updating of screenshot ids via online database
+#       True    - Disable updating of screen ids via onliny database
+UPDATE_TITLE_IDS: True
 
 
 #################################################################
