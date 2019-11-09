@@ -1,5 +1,6 @@
 game_IDs.json
 key.txt
+compiled.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
