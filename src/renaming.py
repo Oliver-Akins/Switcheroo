@@ -1,5 +1,5 @@
 from datetime import datetime
-import config as config
+from config import Config
 
 
 # Readable month formats
@@ -8,7 +8,16 @@ RMMs = { 12: "December", 11: "November", 10: "Octobre", 9: "September", 8: "Augu
 
 
 
-def RENAME(filename, new_filename):
+def RENAME(filename):
+    """
+        Returns the formatted filename for the filename passed into it
+
+        Parameters:
+            filename: string - The raw filename from the Nintendo/Album/ folder
+
+        Return: String - The formatted filename from the given filename. This
+            does not include the file extension in it.
+    """
     # Example Filename: "2019051913454200-F1C11A22FAEE3B82F21B330E1B786A39"
     date = datetime(
         year=int(filename[0:4]),
@@ -32,8 +41,4 @@ def RENAME(filename, new_filename):
         "RM": RMs[date.month],  # Readable month
         "RMM": RMMs[date.month]  # Long readable month
     }
-    return new_filename.format(**DATE_VARIABLES)
-
-
-if "__main__" == __name__:
-    RENAME("2019051913454200-F1C11A22FAEE3B82F21B330E1B786A39", config.FILENAME_FORMAT)
+    return Config().FORMAT.format(**DATE_VARIABLES)
