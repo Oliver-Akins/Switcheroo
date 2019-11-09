@@ -1,6 +1,13 @@
+# Project stuff
 game_IDs.json
 key.txt
 compiled.py
+Nintendo/
+Album/
+
+# VSCode stuffs
+.vsls.json
+.vscode/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
