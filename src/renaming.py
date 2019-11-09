@@ -41,4 +41,4 @@ def RENAME(filename):
         "RM": RMs[date.month],  # Readable month
         "RMM": RMMs[date.month]  # Long readable month
     }
-    return Config().FORMAT.format(**DATE_VARIABLES)
+    return Config().FORMAT.format(**DATE_VARIABLES) + f".{filename.split('.')[-1]}"
