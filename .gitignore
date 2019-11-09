@@ -4,6 +4,7 @@ key.txt
 compiled.py
 Nintendo/
 Album/
+*.zip
 
 # VSCode stuffs
 .vsls.json
