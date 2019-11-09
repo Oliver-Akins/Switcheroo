@@ -9,7 +9,7 @@ RMMs = { 12: "December", 11: "November", 10: "Octobre", 9: "September", 8: "Augu
 
 
 def RENAME(filename, new_filename):
-    # "2019051913454200-F1C11A22FAEE3B82F21B330E1B786A39"
+    # Example Filename: "2019051913454200-F1C11A22FAEE3B82F21B330E1B786A39"
     date = datetime(
         year=int(filename[0:4]),
         month=int(filename[4:6]),
@@ -22,11 +22,11 @@ def RENAME(filename, new_filename):
 
     DATE_VARIABLES = {
         "YYYY": date.year,
-        "MM": date.month,
-        "DD": date.day,
-        "4hh": date.hour,   # 24 hour time
-        "mm": date.minute,
-        "ss": date.second,
+        "MM": date.month if date.month >= 10 else f"0{date.month}",
+        "DD": date.day if date.day >= 10 else f"0{date.day}",
+        "4hh": date.hour if date.hour >= 10 else f"0{date.hour}",   # 24 hour time
+        "mm": date.minute if date.minute >= 10 else f"0{date.minute}",
+        "ss": date.second if date.second >= 10 else f"0{date.second}",
         "2hh": date.hour if date.hour <= 12 else date.hour - 12,  # 12 hour time
 
         "RM": RMs[date.month],  # Readable month
