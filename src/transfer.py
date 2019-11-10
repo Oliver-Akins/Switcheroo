@@ -13,7 +13,7 @@ def get_files():
     files = []
 
     # Collect all the files we need to generate
-    source = Path(config.SOURCE + "Album/").glob(
+    source = Path(config.SOURCE, "Album").glob(
         "[0-9][0-9][0-9][0-9]/[0-9][0-9]/[0-9][0-9]/*"
     )
 
@@ -29,11 +29,6 @@ def get_files():
 
 
 
-"""
-GET LIST OF FILES (TYLKER)
-Check which files we actually have to move
-MOVE FILE (Dminer)
-"""
 
 # from_filepath = /.../Nintendo/Album/2019/11/9/date-titleid.png
 #
