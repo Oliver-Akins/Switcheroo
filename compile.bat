@@ -1,5 +1,4 @@
 @echo OFF
 
-cd src
-zip -r ../switcheroo.py *.py
-cd ..
+powershell Compress-Archive src/* switcheroo.zip
+rename switcheroo.zip switcheroo.py
