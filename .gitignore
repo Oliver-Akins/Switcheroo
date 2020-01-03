@@ -2,10 +2,12 @@
 game_IDs.json
 key.txt
 compiled.py
-switcheroo.py
+switcheroo*.py
 Nintendo/
 Album/
 *.zip
+games.yaml
+
 
 # VSCode stuffs
 .vsls.json
