@@ -6,7 +6,7 @@ switcheroo*.py
 Nintendo/
 Album/
 *.zip
-games.yaml
+*.yaml
 
 
 # VSCode stuffs
