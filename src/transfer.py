@@ -1,7 +1,7 @@
 import os
 from config import Config
 from pathlib import Path
-from renaming import RENAME
+from renaming import rename
 
 
 def get_files():
@@ -29,9 +29,10 @@ def get_files():
 
 # from_filepath = /.../Nintendo/Album/2019/11/9/date-titleid.png
 #
-# new_filepath = {config.TARGET}/game_name/filename_from_RENAME_FILE.<ext>
-def MOVE_FILE(from_filepath):
+# new_filepath = {config.TARGET}/game_name/filename_parameter.<ext>
+def move_file(from_filepath, game_name, filename):
     config = Config()
+    print(f"from_filepath: {from_filepath}\ngame_name: {game_name}\nfilename: {filename}")
     new_path = ""
 
     if(config.KEEP_ON_SD):
@@ -42,8 +43,6 @@ def MOVE_FILE(from_filepath):
 
 
 
-
-
-if __name__ == "__main__":
-    from_filepath = "/home/tyler/Desktop/coding/Nintendo-Switch-Photo-Manager/Nintendo/Album/2017/03/03/2017030311400900-F1C11A22FAEE3B82F21B330E1B786A39.jpg"
-    MOVE_FILE(from_filepath)
+# This should return the filepath of where we are wanting to move the file to, this will return a Path object
+def get_target_path():
+    return ""

@@ -8,9 +8,10 @@ RMMs = { 12: "December", 11: "November", 10: "Octobre", 9: "September", 8: "Augu
 
 
 
-def RENAME(filename):
+def rename(filename):
     """
-        Returns the formatted filename for the filename passed into it
+        Returns the formatted filename for the filename passed into it.
+        This JUST takes the filename & extension, not the full filepath.
 
         Parameters:
             filename: string - The raw filename from the Nintendo/Album/ folder

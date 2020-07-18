@@ -22,6 +22,7 @@ class Config():
     VIDEO_FORMATS = ["mp4", "mkv"]
     IMAGE_FORMATS = ["png", "jpg", "jpeg"]
 
+
     # USER ASSIGNED VARIABLES
     KEEP_ON_SD = data["KEEP_ON_SD_CARD"]
     FORMAT = data["FILENAME_FORMAT"]
@@ -30,6 +31,8 @@ class Config():
     SOURCE = data["SOURCE_FILEPATH"]
     DO_IMAGES = data["INCLUDE_IMAGES"]
     DO_VIDEOS = data["INCLUDE_VIDEOS"]
+    PROMPT_FOR_UNKNOWN = data["PROMPT_FOR_UNKNOWN"]
+
 
     # NOTE: Ensure that the album folder exists
     if not SOURCE.endswith(("/Album", "/Album/")):
@@ -41,6 +44,7 @@ class Config():
             SOURCE = SOURCE[:-len("Album")]
         else:
             SOURCE = SOURCE[:-len("Album/")]
+
 
     # NOTE: Ensure that the path indicates the inner directory
     if not SOURCE.endswith("/"): SOURCE + "/"
