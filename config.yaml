@@ -1,6 +1,6 @@
 
 # The directory to the SD card from your Switch (Nintendo folder).  # TODO: Rewords better
-SOURCE_FILEPATH: "Nintendo/Album"
+SOURCE_FILEPATH: "./Nintendo/Album/"
 
 
 # This tells the program whether or not to keep the image files on the SD card
@@ -18,12 +18,12 @@ KEEP_ON_SD_CARD: False
 
 
 # This is the filepath of where you want the images and videos to be sent to.
-# It is only used if the `KEEP_ON_SD_CARD` option is set to `True`. This can be
-# anywhere on your computer so long as the directory already exists.
-TARGET_FILEPATH: ""
+# It is only used if the `KEEP_ON_SD_CARD` option is set to `False`. This can be
+# anywhere on your computer.
+TARGET_FILEPATH: "Nintendo/Organized/"
 
 
-FILENAME_FORMAT: "{YYYY}-{RMM}-{DD}.{4hh}-{mm}-{ss}"
+FILENAME_FORMAT: "{YYYY}-{MM}-{DD}.{4hh}-{mm}-{ss}"
 
 
 # Enable updating of all screenshotids via online database.
@@ -46,3 +46,7 @@ UPDATE_TITLE_IDS: True
 #     True    - Tell the program to include files of the specified type
 INCLUDE_IMAGES: True
 INCLUDE_VIDEOS: True
+
+
+#
+PROMPT_FOR_UNKNOWN: True
